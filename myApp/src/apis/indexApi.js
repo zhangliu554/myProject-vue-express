@@ -1,11 +1,11 @@
 import {BASEURL} from "../common/baseApi"
-const PRODUCTURL = `${BASEURL}/product`;
+const INDEXURL = `${BASEURL}/index`;
 export default {
   /**
    * 获取店铺的信息
    */
-  getShopInfo(cb){
-    fetch(PRODUCTURL).then(res=>{
+  getIndexInfo(cb){
+    fetch(INDEXURL).then(res=>{
       res.json().then(cb)
     })
   }

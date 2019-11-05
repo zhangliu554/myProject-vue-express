@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+// import indexModel from '../model/indexModel'
+const indexModel = require('../model/indexModel');
 
 router.all("*",(req,res,next)=>{
   res.header("Access-Control-Allow-Origin","*");
@@ -13,13 +15,7 @@ router.all("*",(req,res,next)=>{
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.get('/product', function(req, res, next) {
-  let data={
-    code:0,
-    data:{name:'aaa',pwd:'123'},
-    isSuccess:true,
-    msg:"请求成功"
-  };
-  res.json(data);
+router.get('/index',(req, res)=> {
+  res.jsonp(indexModel.getIndexInfo())
 });
 module.exports = router;
