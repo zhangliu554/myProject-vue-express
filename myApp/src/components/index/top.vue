@@ -38,17 +38,21 @@
     background: #fff;
   }
   .topList ul {
-    display: flex;
+    display: -webkit-box;;
     flex-wrap: nowrap;
     overflow: auto;
     width: 100%;
   }
   .topList ul li{
     text-align: center;
-    font-size: 0.12rem;
+    font-size: 0.1rem;
     margin: 0.1rem;
+    width: 30%;
   }
-  /*.topList ul li img{*/
-  /*  width: 100%;*/
-  /*}*/
+  .topList p{
+    color: #ccc;
+  }
+  .topList ul li img{
+    width: 100%;
+  }
 </style>

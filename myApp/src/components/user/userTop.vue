@@ -3,7 +3,7 @@
     <div class="topImg">
       <a href="#">登录/注册</a>
     </div>
-    <p>
+    <p class="tabs">
       <span>默认购物频道</span>
       <span>男士MAN > </span>
     </p>
@@ -32,4 +32,12 @@
   margin: 0.2rem;
   font-size: 0.14rem;
 }
+  .tabs{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.15rem;
+    line-height: 0.4rem;
+    border-bottom: 0.1rem solid #eee;
+    font-size: 0.14rem;
+  }
 </style>

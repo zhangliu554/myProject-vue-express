@@ -1,31 +1,17 @@
 <template>
   <div class="section">
-<!--    <my-banner></my-banner>-->
-    <p>
-      轮播图
-    </p>
-    <p>
-      轮播图
-    </p>
-    <p>
-      轮播图
-    </p>
+    <my-banner  v-if="data.bannerOne" :bannerOne="data.bannerOne"></my-banner>
     <nav-list></nav-list>
     <div class="active-img"><a href="#"><img :src="pic.activeImg" alt=""></a></div>
     <hot-type v-if="data.hotType" :data="data.hotType"></hot-type>
-    <p>1223</p>
-    <p>1223</p>
-    <p>1223</p>
-    <p>1223</p>
-    <p>1223</p>
-    <p>1223</p>
+    <my-banner  v-if="data.bannerTwo" :bannerTwo="data.bannerTwo"></my-banner>
     <brand v-if="data.brand" :data="data.brand" :brandImg="pic"></brand>
     <top-product v-if="data.recommend" :data="data.recommend" :topImg="pic"></top-product>
   </div>
 </template>
 
 <script>
-  // import banner from './banner'
+  import banner from './banner'
   import navList from './navList'
   import hotType from './hotType'
   import brand from './brand'
@@ -33,11 +19,11 @@
   export default {
     name: "index-section",
     components:{
-      // "myBanner":banner,
+      "myBanner":banner,
       "navList":navList,
       "hotType":hotType,
       "brand":brand,
-      "topProduct":top
+      "topProduct":top,
     },
     props:["data","pic"]
   }

@@ -9,7 +9,7 @@
 <script>
   import myFooter from '../../components/footer'
   import indexHeader from '../../components/header/header'
-  import indexApi from '../../apis/indexApi'
+  import indexApi from '../../apis/Api'
   import indexSection from "../../components/index/index-section"
   export default {
     name: "index",
@@ -27,7 +27,7 @@
       _initShopInfo(){
         indexApi.getIndexInfo(data => {
           this.indexInfo = data;
-          console.log(this.indexInfo.brand)
+          // console.log(this.indexInfo.brand)
         })
       }
     },

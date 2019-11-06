@@ -1,26 +1,22 @@
 <template>
   <div>
-    <type-header title="个人中心"></type-header>
-    <h1>分类</h1>
+    <my-shopping></my-shopping>
     <my-footer></my-footer>
   </div>
-
 </template>
 
 <script>
-  import typeHeader from '../../components/header/type-header'
+  import shopping from "../../components/shopping/shoppingSection";
   import myFooter from '../../components/footer'
   export default {
-    name: "type",
+    name: "guang"  ,
     components:{
       "myFooter":myFooter,
-      "typeHeader":typeHeader
+      "my-shopping":shopping
     }
   }
 </script>
 
 <style scoped>
-  /*body{*/
-  /*  background: #ccc;*/
-  /*}*/
+
 </style>
