@@ -1,28 +1,24 @@
 <template>
     <ul class="shopping-top-nav">
-      <li :key="index" v-for="(item,index) in nav"><a href="#" :class="colorIndex==index?'activeColor':'bActiveColor'"  @click.prevent="changeColor(index)">{{item.title}}</a></li>
+      <li :key="index" v-for="(item,index) in data" @click="changeList(index)"><a href="#" :class="colorIndex==index?'activeColor':'bActiveColor'"  @click.prevent="changeColor(index)">{{item}}</a></li>
     </ul>
 </template>
 
 <script>
   export default {
     name: "topNav",
+    props:["data"],
     data(){
       return{
-        nav:[
-          {"title":"最新"},
-          {"title":"搭配"},
-          {"title":"头条"},
-          {"title":"上新"},
-          {"title":"视频"},
-          {"title":"咨询"},
-        ],
         colorIndex:0
       }
     },
     methods:{
       changeColor(index) {
         this.colorIndex = index;
+      },
+      changeList(pid){
+        this.$bus.$emit("num",pid)
       }
     }
   }

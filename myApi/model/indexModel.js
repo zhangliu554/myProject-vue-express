@@ -88,69 +88,69 @@ module.exports = {
             "recommend":[
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/01ae1ab3f7ffb83b6af23597b08b2d88b3.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/02742c0603509a8621fac0e18b91193b19.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/02c22afa67054cb29b2172d8ab0a8083c3.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/01ad9727ba58affab15875bdbe9261fb31.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/01aa908b40b136c0a8d8b87dc6875d6c7c.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/01beca6c0028cc95081a9361bfcdf26ff0.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/01c82f4d6edd29216f40275e27c43a9a23.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/02ad47771d0ee7203c50e3bbbefa1f5b07.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },
               {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/02a053b9ac0e007b2bca75d6aa5c0f89da.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]
               },   {
                 list:[
-                  {"pic":"assets/boys/011063f7c725099b0a3263716189d23650.jpg"},
+                  {"pic":"assets/boys/02ee2d9dcbc484a1d7d37da73ee32a8e42.jpg"},
                   {"price":"￥639.00"},
                   {"tip":"120人"}
                 ]

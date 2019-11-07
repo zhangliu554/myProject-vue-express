@@ -1,10 +1,10 @@
 <template>
     <ul class="footer">
-      <router-link tag="li" :to="'/main/index'"><p class="iconfont icon-shouye"></p><p>首页</p></router-link>
-      <router-link tag="li" :to="'/main/type'"><p class="iconfont icon-leimupinleifenleileibie"></p><p>分类</p></router-link>
-      <router-link tag="li" :to="'/main/shopping'"><p class="iconfont icon-huojian"></p><p>逛</p></router-link>
-      <router-link tag="li" :to="'/main/cart'"><p class="iconfont icon-gouwuche1-copy"></p><p>购物车</p></router-link>
-      <router-link tag="li" :to="'/main/user'"><p class="iconfont icon-wode1"></p><p>我的</p></router-link>
+      <router-link tag="li" :to="'/index'"><p class="iconfont icon-shouye"></p><p>首页</p></router-link>
+      <router-link tag="li" :to="'/type'"><p class="iconfont icon-leimupinleifenleileibie"></p><p>分类</p></router-link>
+      <router-link tag="li" :to="'/shopping'"><p class="iconfont icon-huojian"></p><p>逛</p></router-link>
+      <router-link tag="li" :to="'/cart'"><p class="iconfont icon-gouwuche1-copy"></p><p>购物车</p></router-link>
+      <router-link tag="li" :to="'/user'"><p class="iconfont icon-wode1"></p><p>我的</p></router-link>
     </ul>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <a href="#/main/index" class="iconfont" :class="left"></a>
+    <router-link :to="'/index'"><a class="iconfont" :class="left"></a></router-link>
     <span  v-if="title" class="title">{{title}}</span>
     <span v-else class="logo"><img src="../../assets/images/logo.png" alt=""></span>
     <a href="#" class="iconfont" :class="right"></a>

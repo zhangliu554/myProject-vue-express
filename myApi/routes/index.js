@@ -4,6 +4,7 @@ const router = express.Router();
 const indexModel = require('../model/indexModel');
 const shoppingModel = require('../model/shoppingModel');
 const typeModel = require('../model/typeModel');
+const newProductModel = require('../model/newProductModel');
 
 router.all("*",(req,res,next)=>{
   res.header("Access-Control-Allow-Origin","*");
@@ -25,5 +26,8 @@ router.get('/shopping',(req, res)=> {
 });
 router.get('/type',(req, res)=> {
   res.jsonp(typeModel.getTypeInfo())
+});
+router.get('/newProduct',(req, res)=> {
+  res.jsonp(newProductModel.getNewProductInfo())
 });
 module.exports = router;

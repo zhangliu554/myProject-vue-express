@@ -1,8 +1,8 @@
 <template>
   <div class="navList">
     <ul>
-      <li :key="index" v-for="(item,index) in navListOne">
-        <a :key="i.title" href="#" v-for="i in item.list"><img :src="i.pic" alt=""></a>
+      <li :key="index" v-for="(item,index) in navListOne" @click="go(index)">
+          <a :key="i.title" href="#" v-for="i in item.list"><img :src="i.pic" alt=""></a>
         <p :key="index" v-for="(i,index) in item.list">{{i.title}}</p>
       </li>
     </ul>
@@ -36,6 +36,16 @@
             ]
             }
         ]
+      }
+    },
+  // props:["index"]
+    methods:{
+      go(i){
+        if(i == 0){
+          this.$router.push("newProduct");
+        }else if(i ==1){
+          this.$router.push("shopping");
+        }
       }
     }
   }

@@ -6,22 +6,25 @@ import type from '../views/main/type'
 import shopping from '../views/main/shopping'
 import cart from '../views/main/cart'
 import user from '../views/main/user'
+import newProduct from "../components/newProduct/newProduct";
 Vue.use(VueRouter);
 let router = new VueRouter({
   linkActiveClass: 'to-active',
   // linkExactActiveClass: '',
   routes:[
-    {path: '/',redirect: '/main/index'},
-    { path:'/main',
+    {path: '/',redirect: '/index'},
+    { path:'/',
       component:main,
       children:[
-        {path:"index",component:index},
-        {path:"type",component:type},
-        {path:"cart",component:cart},
-        {path:"user",component:user},
-        {path:"shopping",component:shopping},
+        {path:"index",name:"index",component:index},
+        {path:"type",name:"type",component:type},
+        {path:"cart",name:"cart",component:cart},
+        {path:"user",name:"user",component:user},
+        {path:"shopping",name:"shopping",component:shopping},
+        {path:"newProduct",name:"newProduct",component:newProduct},
       ]
     }
+
   ]
 });
 export default router;

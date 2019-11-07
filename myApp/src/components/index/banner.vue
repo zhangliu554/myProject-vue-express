@@ -5,13 +5,18 @@
         <a href="#"><img :src="item.s1" alt=""></a>
       </div>
     </div>
-    <div class="swiper-wrapper" v-else>
+    <div class="swiper-wrapper" v-else-if="bannerTwo">
       <div :key="index" class="swiper-slide" v-for="(item,index) in bannerTwo">
         <a href="#"><img :src="item.s1" alt=""></a>
       </div>
     </div>
+    <div class="swiper-wrapper" v-else-if="data">
+      <div :key="index" class="swiper-slide" v-for="(item,index) in data">
+        <a href="#"><img :src="item.s1" alt=""></a>
+      </div>
+    </div>
     <!-- 如果需要分页器 -->
-    <div class="swiper-pagination" ></div>
+    <div class="swiper-pagination"></div>
   </div>
 </template>
 
@@ -19,7 +24,7 @@
   import Swiper from "swiper";
   export default {
     name: "banner",
-    props: ["bannerOne","bannerTwo"],
+    props: ["bannerOne","bannerTwo","data"],
     methods: {
       _initSwiper() {
         // eslint-disable-next-line no-unused-vars
@@ -50,15 +55,16 @@
     height: 100%;
   }
   .swiper-pagination{
-    border: 0.005rem solid #ccc;
-    padding: 0.05rem;
-    width: auto;
-    display: flex;
-    text-align: center;
-    border-radius: 0.2rem;
-    background: rgba(0,0,0,0.2);
-    color: #fff;
-    margin-left:1.1rem;
+    /*border: 0.005rem solid #ccc;*/
+    /*padding: 0.05rem;*/
+    /*width: auto;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*text-align: center;*/
+    /*border-radius: 0.2rem;*/
+    /*background: rgba(0,0,0,0.2);*/
+    /*margin-left:1.1rem;*/
+
   }
   /*.swiper-pagination-bullet-active{*/
   /*  background: #fff;*/
