@@ -8,15 +8,15 @@
       <ul>
         <li class="pay">
           <div>
-            <a href="#" class="iconfont icon-shouye"></a>
+            <a href="#" class="iconfont icon-card"></a>
             <p>代付款</p>
           </div>
           <div>
-            <a href="#" class="iconfont icon-shouye"></a>
+            <a href="#" class="iconfont icon-dianpu"></a>
             <p>代发货</p>
           </div>
           <div>
-            <a href="#" class="iconfont icon-shouye"></a>
+            <a href="#" class="iconfont icon-truck"></a>
             <p>待收货</p>
           </div>
         </li>
@@ -74,4 +74,5 @@
     display: block;
     padding-bottom: 0.05rem;
   }
+
 </style>

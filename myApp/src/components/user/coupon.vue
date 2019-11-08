@@ -20,10 +20,10 @@
     data(){
       return {
         couponList:[
-          {"icon":"icon-shouye","title":"优惠券"},
-          {"icon":"icon-shouye","title":"有货币"},
-          {"icon":"icon-shouye","title":"消息"},
-          {"icon":"icon-shouye","title":"服务与反馈"},
+          {"icon":"icon-youhuiquan","title":"优惠券"},
+          {"icon":"icon-Y","title":"有货币"},
+          {"icon":"icon-xiaoxi","title":"消息"},
+          {"icon":"icon-kefu-copy","title":"服务与反馈"},
         ]
       }
     }

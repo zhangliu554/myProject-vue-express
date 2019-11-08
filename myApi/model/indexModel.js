@@ -85,7 +85,7 @@ module.exports = {
             {"s1":"assets/boys/019f125a2713ae74a849c3d8b58ab9abb6.jpg"},
             {"s1":"assets/boys/0173088d664d59084d9dd61fa2d8b78908.png"},
           ],
-            "recommend":[
+           "recommend":[
               {
                 list:[
                   {"pic":"assets/boys/01ae1ab3f7ffb83b6af23597b08b2d88b3.jpg"},
@@ -155,7 +155,7 @@ module.exports = {
                   {"tip":"120人"}
                 ]
               }
-            ]
+            ],
         };
     return newsArr;
   }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="topImg">
-      <a href="#">登录/注册</a>
+      <router-link :to="'/login'">登录/注册</router-link>
     </div>
     <p class="tabs">
       <span>默认购物频道</span>

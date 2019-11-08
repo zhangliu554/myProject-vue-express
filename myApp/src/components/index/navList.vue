@@ -42,9 +42,11 @@
     methods:{
       go(i){
         if(i == 0){
-          this.$router.push("newProduct");
+          this.$router.push("/newProduct");
         }else if(i ==1){
           this.$router.push("shopping");
+        }else if(i == 3){
+          this.$router.push("type");
         }
       }
     }

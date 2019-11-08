@@ -3,20 +3,23 @@
     <type-header title="个人中心"></type-header>
     <type-section v-if="typeInfo" :data="typeInfo"></type-section>
     <my-footer></my-footer>
+    <go-top></go-top>
   </div>
 
 </template>
 <script>
+  import goTop from "../../components/common/goTop";
   import typeSection from "../../components/type/typeSection";
   import typeApi from '../../apis/Api'
-  import typeHeader from '../../components/header/type-header'
-  import myFooter from '../../components/footer'
+  import typeHeader from '../../components/common/type-header'
+  import myFooter from '../../components/common/footer'
   export default {
     name: "type",
     components:{
       "myFooter":myFooter,
       "typeHeader":typeHeader,
-      "typeSection":typeSection
+      "typeSection":typeSection,
+      "go-top":goTop
     },
     data(){
       return {

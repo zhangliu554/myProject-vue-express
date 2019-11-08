@@ -2,7 +2,7 @@
   <div  class="type-nav">
     <ul>
       <li :key="index" v-for="(item,index) in data" @click="getNav(index)">
-        <a href="#" :class="colorIndex==index?'activeColor':'bActiveColor'"
+        <a :class="colorIndex==index?'activeColor':'bActiveColor'"
            @click.prevent="changeColor(index)">{{item.title}}</a>
       </li>
     </ul>

@@ -1,7 +1,7 @@
 <template>
   <div class="type-header">
     <input type="text" placeholder="搜索商品">
-    <span class="iconfont icon-huojian search"></span>
+    <span class="iconfont icon-sousuo search"></span>
   </div>
 </template>
 

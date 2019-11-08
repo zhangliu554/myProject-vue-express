@@ -5,7 +5,7 @@
           <p><img :src="n.img" alt=""></p>
           <p class="title">{{n.title}}</p>
           <p class="type">{{n.type}}</p>
-          <p class="tip"><span>{{n.tip}}</span><span v-if="n.support"><span class="support">{{n.support}}</span><a class="iconfont icon-huojian"></a></span></p>
+          <p class="tip"><span>{{n.tip}}</span><span v-if="n.support"><span class="support">{{n.support}}</span><a class="iconfont icon-dianzan"></a></span></p>
         </div>
       <p-product :key="index" v-for="(f,index) in item" :data="f.product"></p-product>
     </div>

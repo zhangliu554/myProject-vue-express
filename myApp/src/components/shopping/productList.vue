@@ -10,7 +10,7 @@
 <script>
   import list from "./list";
   // import product from "./product";
-  import banner from '../index/banner'
+  import banner from '../common/banner'
   export default {
     name: "productList",
     props:["data"],
