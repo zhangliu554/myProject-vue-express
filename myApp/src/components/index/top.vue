@@ -1,12 +1,12 @@
 <template>
   <div class="recommend">
     <p class="recommend-title">{{topImg.title}}</p>
-    <div class="active-img"><a href="#"><img :src="topImg.top" alt=""></a></div>
+    <div class="active-img"><a><img :src="topImg.top" alt=""></a></div>
     <div class="topList">
       <ul>
         <li :key="index" v-for="(item,index) in data">
           <div :key="i.title" v-for="(i) in item.list">
-            <a href="#"><img :src="i.pic" alt=""></a>
+            <a><img :src="i.pic" alt=""></a>
             <p>{{i.price}}</p>
             <p>{{i.tip}}</p>
           </div>

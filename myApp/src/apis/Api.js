@@ -3,6 +3,8 @@ const INDEXURL = `${BASEURL}/index`;
 const TYPEURL = `${BASEURL}/type`;
 const SHOPPINGURL = `${BASEURL}/shopping`;
 const NEWPRODUCTURL = `${BASEURL}/newProduct`;
+const ITEMURL = `${BASEURL}/item`;
+const LOGINURL = `${BASEURL}/login`;
 export default {
   /**
    * 获取店铺的信息
@@ -26,5 +28,15 @@ export default {
     fetch(NEWPRODUCTURL).then(res=>{
       res.json().then(cb)
     })
-  }
+  },
+  async getProductById(id) {
+    let res = await fetch(`${ITEMURL}/?id=${id}`);
+    let data = await res.json();
+    return data;
+  },
+  checkUserLogin(username,password,cb){
+    fetch(`${LOGINURL}/?username=${username}&password=${password}`, { method: 'POST' }).then(res=>{
+      res.json().then(cb)
+    })
+  },
 }

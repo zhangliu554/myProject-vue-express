@@ -4,12 +4,12 @@ module.exports = {
         {
           "nav":["最新","搭配","头条","上新","视频","资讯"],
           "banner":[
-            {"s1":"assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg"},
-            {"s1":"assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg"},
-            {"s1":"assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg"},
-            {"s1":"assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg"},
-            {"s1":"assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg"},
-            {"s1":"assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg"}
+            "assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg",
+            "assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg",
+            "assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg",
+            "assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg",
+            "assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg",
+            "assets/guang/01a49fa9712202eaf5e14a7b43b1a61d87.jpg"
           ],
           "shoppingList":[
             {"list":[

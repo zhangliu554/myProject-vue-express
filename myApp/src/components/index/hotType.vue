@@ -3,7 +3,7 @@
     <p class="hotType-title">{{data.title}}</p>
     <ul>
       <li :key="index" v-for="(item,index) in data.hotTypeList">
-        <a :key="index" href="#" v-for="(i,index) in item.list"><img :src="i.pic" alt=""></a>
+        <a :key="index"  v-for="(i,index) in item.list"><img :src="i.pic" alt=""></a>
       </li>
     </ul>
   </div>

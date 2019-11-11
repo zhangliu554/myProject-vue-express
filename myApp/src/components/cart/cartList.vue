@@ -1,15 +1,12 @@
 <template>
   <div class="cart">
     <div class="cart-list">
-      <p>请您先 <a>登录</a> 可以同步电脑和手机中的商品</p>
+      <p>请您先 <a href="#/login">登录</a> 可以同步电脑和手机中的商品</p>
       <div>
         <a><img src="../../../public/assets/cart/cartLogo.jpg" alt=""></a>
         <p>您的购物车暂无商品</p>
         <a href="#/newProduct" class="go-to-see">随便逛逛</a>
       </div>
-    </div>
-    <div class="cart-list-new">
-      <p>为你优选新品</p>
     </div>
   </div>
 </template>
@@ -61,9 +58,5 @@
     font-size: 0.12rem;
     border-radius: 0.1rem;
   }
-  .cart-list-new{
-    padding:0.3rem;
-    text-align: center;
-    font-size: 0.18rem;
-  }
+
 </style>

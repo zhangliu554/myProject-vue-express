@@ -3,19 +3,19 @@ module.exports = {
     let newsArr =
         {
           "bannerOne":[
-            {"s1":"assets/boys/01c7928597258797b40aac3f9729d80b7c.jpg"},
-            {"s1":"assets/boys/013e093e47016f2567a300ef4801151249.jpg"},
-            {"s1":"assets/boys/018cb62982fc46be3532d52a013f3c81bc.jpg"},
-            {"s1":"assets/boys/0116ae0730611b084c86c8713b1c1a6e23.jpg"},
-            {"s1":"assets/boys/0182a53b52d99b99044ba95686cf3ad29a.jpg"},
-            {"s1":"assets/boys/0197cf768169e65699a39cd681be48e514.jpg"},
-            {"s1":"assets/boys/01903a0bd6a4534d4dbf3158f787fa2b81.jpg"},
-            {"s1":"assets/boys/01977d0d6b616f33454cfaf113b8643720.jpg"},
+            "assets/boys/01c7928597258797b40aac3f9729d80b7c.jpg",
+            "assets/boys/013e093e47016f2567a300ef4801151249.jpg",
+            "assets/boys/018cb62982fc46be3532d52a013f3c81bc.jpg",
+            "assets/boys/0116ae0730611b084c86c8713b1c1a6e23.jpg",
+            "assets/boys/0182a53b52d99b99044ba95686cf3ad29a.jpg",
+            "assets/boys/0197cf768169e65699a39cd681be48e514.jpg",
+            "assets/boys/01903a0bd6a4534d4dbf3158f787fa2b81.jpg",
+           "assets/boys/01977d0d6b616f33454cfaf113b8643720.jpg",
           ],
           "bannerTwo":[
-            {"s1":"assets/boys/01d7eba752757953bc3461e1fe16fc709f.jpg"},
-            {"s1":"assets/boys/01d08c768f12b4b2767619395fcd4f37ea.jpg"},
-            {"s1":"assets/boys/01528b73dab8d53f0a5111a54c9b4ee1c4.jpg"},
+           "assets/boys/01d7eba752757953bc3461e1fe16fc709f.jpg",
+           "assets/boys/01d08c768f12b4b2767619395fcd4f37ea.jpg",
+            "assets/boys/01528b73dab8d53f0a5111a54c9b4ee1c4.jpg",
           ],
           "bigPic":{
             "title":"人气推荐",

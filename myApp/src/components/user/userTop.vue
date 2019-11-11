@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="topImg">
-      <router-link :to="'/login'">登录/注册</router-link>
+      <div v-if="this.localStorage" class="user"><img src="../../../public/assets/info/userInfo.jpg" alt=""><span>{{this.localStorage}}，欢迎您</span><span @click="loginOut" style="margin-left: 0.1rem; ">退出</span></div>
+      <router-link :to="'/login'" v-else>登录/注册</router-link>
     </div>
     <p class="tabs">
       <span>默认购物频道</span>
@@ -12,7 +13,19 @@
 
 <script>
   export default {
-    name: "userTop"
+    name: "userTop",
+    data(){
+      return {
+        localStorage: localStorage.getItem("user")
+      }
+    },
+    methods:{
+      loginOut(){
+        localStorage.removeItem('user');
+        //刷新页面
+        location.reload()
+      }
+    }
   }
 </script>
 
@@ -40,4 +53,20 @@
     border-bottom: 0.1rem solid #eee;
     font-size: 0.14rem;
   }
+.user{
+  text-align: left;
+  padding-left: 0.2rem;
+}
+.user span{
+    border: 0;
+    color: #fff;
+    font-size: 0.16rem;
+  }
+.user img{
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
 </style>

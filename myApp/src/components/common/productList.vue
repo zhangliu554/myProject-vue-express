@@ -3,7 +3,7 @@
     <ul :key="index" v-for="(n,index) in data">
       <li :key="item.title" v-for="item in n" >
         <div>
-          <a href="#"><img :src="item.img" alt=""></a>
+          <a @click="goUrl(item.pid)"><img :src="item.img" alt="有货"></a>
           <p></p>
         </div>
         <p class="new-title">{{item.title}}</p>
@@ -16,7 +16,12 @@
 <script>
   export default {
     name: "productList",
-    props:["data"]
+    props:["data"],
+    methods:{
+      goUrl(i){
+        this.$router.push('/pDetails?id=' + i)
+      }
+    }
   }
 </script>
 

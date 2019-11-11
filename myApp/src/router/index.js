@@ -8,6 +8,7 @@ import cart from '../views/main/cart'
 import user from '../views/main/user'
 import newProduct from "../components/newProduct/newProduct";
 import login from "../components/login/login";
+import details from "../components/ProductDetails/pDetails";
 Vue.use(VueRouter);
 let router = new VueRouter({
   linkActiveClass: 'to-active',
@@ -23,7 +24,8 @@ let router = new VueRouter({
         {path:"user",name:"user",component:user},
         {path:"shopping",name:"shopping",component:shopping},
         {path:"newProduct",name:"newProduct",component:newProduct},
-        {path:"login",name:"login",component:login}
+        {path:"login",name:"login",component:login},
+        {path:"pDetails",name:"pDetails",component:details}
       ]
     }
   ]

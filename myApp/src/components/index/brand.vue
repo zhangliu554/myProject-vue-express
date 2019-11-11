@@ -2,7 +2,7 @@
   <div class="brand">
     <ul>
       <li :key="index" v-for="(item,index) in data">
-        <a href="#"><img :src="item.s1" alt=""></a>
+        <a ><img :src="item.s1" alt=""></a>
       </li>
     </ul>
     <div class="active-img"><a href="#"><img :src="brandImg.brandImg" alt=""></a></div>

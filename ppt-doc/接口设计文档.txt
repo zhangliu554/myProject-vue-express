@@ -1,0 +1,15 @@
+接口设计：nodejs搭建接口，搭建一个一级路由，为不同的页面数据需求，搭建不同的二级路由接口
+1、主页面数据接口
+数据分类：
+轮播图
+热门品类 品牌分类图片
+人气推荐商品信息
+模块设计：以json文件的格式返回
+//主页路由
+router.get('/index',(req, res)=> {
+  res.json(indexModel.getIndexInfo())
+});
+2、分类页面数据接口
+数据类型：
+该页面共有四大类 boys、girls、kids、lifestyle
+四类下面分为推荐列表 以及列表详情

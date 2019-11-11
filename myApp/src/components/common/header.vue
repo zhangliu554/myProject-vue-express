@@ -1,20 +1,26 @@
 <template>
   <div class="header">
-    <router-link tag="span" :to="'/index'"><a class="iconfont" :class="left" @click="getSideBar()"></a></router-link>
+<!--    首页点击出来侧边导航-->
+    <a v-if="flag" class="iconfont" :class="left" @click="getSideBar()" ></a>
+<!--    返回箭头上一级页面-->
+    <a v-else class="iconfont" :class="left" @click="back"></a>
     <span  v-if="title" class="title">{{title}}</span>
     <span v-else class="logo"><img src="../../assets/images/logo.png" alt=""></span>
-    <a href="#" class="iconfont" :class="right"></a>
+    <a class="iconfont" :class="right"></a>
   </div>
 </template>
 
 <script>
   export default {
     name: "myHeader",
-    props:["title","left","right","active"],
+    props:["title","left","right","active","flag"],
     methods:{
       getSideBar(){
         this.$emit("changeShow","true")
-      }
+      },
+      back(){
+        this.$router.go(-1);//返回上一层
+      },
     }
   }
 </script>
@@ -44,6 +50,9 @@
   }
   .title{
     font-size: 0.21rem;
+  }
+  .right{
+    color: #fff;
   }
   /*.router-link-active .boys{ //.router-link-active 指定*/
   /*  color: #000;*/

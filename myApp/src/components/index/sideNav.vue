@@ -1,10 +1,10 @@
 <template>
     <ul class="side-nav">
         <li :key="index" v-for="(item,index) in nav" @click="goUrl()">
-            <a>{{item.boys}}</a>
+            <a><img :src="item.info" alt=""></a>
             <a>{{item.title}}</a>
             <a>{{item.type}}</a>
-            <a>{{item.info}}</a>
+            <a>{{item.tip}}</a>
         </li>
     </ul>
 </template>
@@ -16,11 +16,11 @@
     data(){
       return {
         "nav":[
-          {"boys":"1","title":"男生","type":"BOYS"},
-          {"boys":"1","title":"女生","type":"GIRLS"},
-          {"boys":"1","title":"童装","type":"KIDS"},
-          {"boys":"1","title":"创意生活","type":"LIFE STYLE"},
-          {"boys":"1","title":"逛","type":"TREND FINDER","info":" > "},
+          {"info":"assets/info/02efef3ab9c5572af60a63a518f1bd3618.png","title":"男生","type":"BOYS"},
+          {"info":"assets/info/01399a2fd752e0d334f57be11d4dbf41c5.png","title":"女生","type":"GIRLS"},
+          {"info":"assets/info/01263e3f813116cc9b61010b8ca580c742.png","title":"童装","type":"KIDS"},
+          {"info":"assets/info/026df1f974add11e823d1912d920176b6c.png","title":"创意生活","type":"LIFE STYLE"},
+          {"info":"assets/info/01ca6c4eb538c1f91d899a091d7ae5139b.png","title":"逛","type":"TREND FINDER","tip":" > "},
         ]
       }
     },
@@ -43,6 +43,12 @@
     margin-right: 0.1rem;
     color: #444;
   }
+  .side-nav li a:nth-child(1) img{
+   width: 0.2rem;
+    height: 0.2rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
   .side-nav li a:nth-child(2){
     font-size: 0.2rem;
     font-weight: 900;
@@ -59,6 +65,6 @@
     font-size: 0.16rem;
   }
   .side-nav li:last-child a:last-child{
-    margin-left: 1.2rem;
+    margin-left: 1.1rem;
   }
 </style>

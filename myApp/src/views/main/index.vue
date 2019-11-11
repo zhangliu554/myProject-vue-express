@@ -1,6 +1,6 @@
 <template>
   <div>
-      <my-index-header left="icon-list" right="icon-sousuo" class="header" :actice="show" @changeShow="bbb($event)"></my-index-header>
+      <my-index-header left="icon-list" flag="true" right="icon-sousuo" class="header" :actice="show" @changeShow="bbb($event)"></my-index-header>
       <index-section v-if="indexInfo&&indexInfo.bigPic" :data="indexInfo" :pic="indexInfo.bigPic"></index-section>
       <my-footer class="footer"></my-footer>
       <go-top></go-top>

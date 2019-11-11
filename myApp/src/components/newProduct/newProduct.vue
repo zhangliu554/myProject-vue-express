@@ -27,7 +27,7 @@
       _initShopInfo(){
         newProductApi.getNewProductInfo(data => {
           this.newProductInfo = data;
-          // console.log(this.newProductInfo.new[0])
+          console.log(this.newProductInfo.new[0])
         })
       }
     },

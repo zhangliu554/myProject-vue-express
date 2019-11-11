@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cart-header title="购物车" left="icon-zuojiantou"></cart-header>
+    <cart-header title="购物车" left="icon-zuojiantou" right="编辑"></cart-header>
     <cart-section  v-if="cartInfo"  :data="cartInfo"></cart-section>
     <go-top></go-top>
   </div>
@@ -20,20 +20,28 @@
     },
     data(){
       return {
-        cartInfo:[]
+        cartInfo:[],
+        // goods:{}
       }
     },
     methods:{
       _initShopInfo(){
         cartApi.getNewProductInfo(data => {
           this.cartInfo = data;
-          // console.log(this.newProductInfo.new[0])
         })
-      }
+      },
+    //   async _initPageData () {
+    //     let { id } = this.$route.query;
+    //     this.goods = await cartApi.getProductById(id);
+    //     console.log(this.goods);
+    //   }
     },
     created() {
       this._initShopInfo()
-    }
+    },
+    // async beforeMount(){
+    //   await this._initPageData()
+    // }
   }
 </script>
 
