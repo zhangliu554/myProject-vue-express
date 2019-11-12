@@ -1,12 +1,20 @@
 <template>
   <div class="login-header">
-    <p><span  @click="$router.back(-1)"> ＜ </span><span>注册</span></p>
+    <p><span  @click="goBack"> ＜ </span><span @click="goRegister">注册</span></p>
     <p>Yoho!Family账号可登录Yoho!Buy有货</p>
   </div>
 </template>
 <script>
   export default {
-    name: "loginHeader"
+    name: "loginHeader",
+    methods:{
+      goBack(){
+        this.$router.back(-1);
+      },
+      goRegister(){
+        this.$router.push("register")
+      }
+    }
   }
 </script>
 

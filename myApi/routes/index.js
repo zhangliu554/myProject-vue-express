@@ -46,25 +46,45 @@ router.get('/item',(req, res)=> {
   res.json(Data)
   // res.send()
 });
-//登录注册页面
-router.post("/login",  (req, res) => {
-  //获取form中的用户名和密码
+//登录页面
+router.get("/login",  (req, res) => {
   let user = req.query;
   // console.log(user);
-    userModel.checkUserLogin(user,(error,result)=>{
-    if(result){
-        // req.session.userInfo = user[0];
-          res.json({
-          code: 200,
-          msg: "登录成功了"
-        })
+  userModel.checkUserLogin(user,(error,result)=>{
+    // console.log(result)
+    if(result.length>0){
+      res.json({
+        code: 200,
+        msg: "登录成功了"
+      })
     }else{
-          res.json({
-          code:201,
-          msg:"登录失败，用户名或者密码错误"
-        })
+      res.json({
+        code:201,
+        msg:"登录失败，用户名或者密码错误"
+      })
     }
   });
 });
+//注册页面路由
+router.get("/register", (req, res) => {
+  //获取form中的用户名和密码
+  let user = req.query.username;
+  // let users = req.query.password;
+  console.log(user);
+  userModel.checkUserRegister(user,(error,result)=>{
+    console.log(result);
+    if(result.length>0){
+      res.json({
+        code: 201,
+        msg: "用户已存在"
+      })
+    }else{
+      res.json({
+        code:200,
+        msg:"注册成功"
+      });
+    }
+  });
+  });
 
 module.exports = router;

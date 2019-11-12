@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 //step1: 通过mongoose连接mongodb 27017
-mongoose.connect("mongodb://127.0.0.1:27017/shop",{
+mongoose.connect("mongodb://127.0.0.1:27017/shops",{
   useNewUrlParser:true,
   useUnifiedTopology:true
 });

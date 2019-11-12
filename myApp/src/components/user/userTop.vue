@@ -16,12 +16,12 @@
     name: "userTop",
     data(){
       return {
-        localStorage: localStorage.getItem("user")
+        localStorage: localStorage.getItem("users")
       }
     },
     methods:{
       loginOut(){
-        localStorage.removeItem('user');
+        localStorage.removeItem('users');
         //刷新页面
         location.reload()
       }

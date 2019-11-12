@@ -5,6 +5,7 @@ const SHOPPINGURL = `${BASEURL}/shopping`;
 const NEWPRODUCTURL = `${BASEURL}/newProduct`;
 const ITEMURL = `${BASEURL}/item`;
 const LOGINURL = `${BASEURL}/login`;
+const REGISTER = `${BASEURL}/register`;
 export default {
   /**
    * 获取店铺的信息
@@ -35,8 +36,13 @@ export default {
     return data;
   },
   checkUserLogin(username,password,cb){
-    fetch(`${LOGINURL}/?username=${username}&password=${password}`, { method: 'POST' }).then(res=>{
+    fetch(`${LOGINURL}/?username=${username}&password=${password}`, { method: 'get' }).then(res=>{
       res.json().then(cb)
     })
   },
+  checkUserRegister(username,cb){
+    fetch(`${REGISTER}/?username=${username}`, { method: 'get' }).then(res=>{
+      res.json().then(cb)
+    })
+  }
 }
