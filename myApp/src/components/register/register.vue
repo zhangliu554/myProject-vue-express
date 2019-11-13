@@ -32,6 +32,7 @@
       goTo(){
         registerApi.checkUserRegister(this.username,this.password,(data)=>{
           if(data.code == 200){
+            alert("注册成功成功，请登录");
             this.$router.push("login")
           }else{
             alert("用户名已存在，请重新注册")

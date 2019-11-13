@@ -2,8 +2,8 @@
   <div>
     <login-header></login-header>
     <div class="login-info">
-      <p ><input class="phone" type="text" placeholder="请输入手机号、邮箱" v-model="username"></p>
-      <p><input class="password" type="password" placeholder="请输入密码" v-model="password"></p>
+      <p ><input name="username" class="phone" type="text" placeholder="请输入手机号、邮箱" v-model="username"/></p>
+      <p><input name="password" class="password" type="password" placeholder="请输入密码" v-model="password"/></p>
     </div>
     <login-checking></login-checking>
     <div class="login">

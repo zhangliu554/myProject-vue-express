@@ -49,9 +49,7 @@ router.get('/item',(req, res)=> {
 //登录页面
 router.post("/login",  (req, res) => {
   let user = req.body;
-  // console.log(user);
   userModel.checkUserLogin(user,(error,result)=>{
-    // console.log(result)
     if(result.length>0){
       res.json({
         code: 200,
@@ -70,9 +68,7 @@ router.post("/register", (req, res) => {
   //获取form中的用户名和密码
   let user = req.body.username;
   let users = req.body;
-  console.log(user);
   userModel.checkUserRegister(user,(error,result)=>{
-    console.log(result);
     if(result.length>0){
       res.json({
         code: 201,
@@ -84,9 +80,7 @@ router.post("/register", (req, res) => {
         msg:"注册成功"
       });
       userModel.addUsers(users,(error,result)=>{
-        if(result){
-          console.log(result)
-        }
+
       })
     }
   });

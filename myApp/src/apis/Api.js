@@ -36,12 +36,26 @@ export default {
     return data;
   },
   checkUserLogin(username,password,cb){
-    fetch(`${LOGINURL}/?username=${username}&password=${password}`, { method: 'post' }).then(res=>{
+    fetch(LOGINURL,{
+      method:"POST",
+      // mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body:`username=${username}&password=${password}`
+    }).then(res=>{
       res.json().then(cb)
     })
   },
   checkUserRegister(username,password,cb){
-    fetch(`${REGISTER}/?username=${username}&password=${password}`, { method: 'post' }).then(res=>{
+    fetch(REGISTER,{
+      method:"POST",
+      // mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body:`username=${username}&password=${password}`
+    }).then(res=>{
       res.json().then(cb)
     })
   }
