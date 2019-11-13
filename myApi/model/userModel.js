@@ -14,5 +14,9 @@ module.exports = {
   },
    checkUserRegister(where,cb){
     return  UserModel.find({username:where}).exec(cb);
+  },
+  addUsers(where,cb){
+    let users = new UserModel(where)
+    users.save(cb)
   }
 };

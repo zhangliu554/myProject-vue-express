@@ -15,7 +15,7 @@
     props:["data"],
     data(){
       return{
-        ls:localStorage.getItem("user")
+        ls:localStorage.getItem("users")
       }
     },
     methods:{

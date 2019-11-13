@@ -34,7 +34,7 @@
          loginApi.checkUserLogin(this.username,this.password,(data)=>{
           if(data.code == 200){
             localStorage.setItem("users",this.username);
-            this.$router.go(-1)
+            this.$router.push("user")
           }else{
             alert("用户名或密码错误")
           }

@@ -21,7 +21,7 @@
     data(){
       return {
         cid:0,
-        localStorage:localStorage.getItem('user')
+        localStorage:localStorage.getItem('users')
       }
     },
     components:{

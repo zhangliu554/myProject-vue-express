@@ -69,7 +69,7 @@ router.get("/login",  (req, res) => {
 router.get("/register", (req, res) => {
   //获取form中的用户名和密码
   let user = req.query.username;
-  // let users = req.query.password;
+  let users = req.query;
   console.log(user);
   userModel.checkUserRegister(user,(error,result)=>{
     console.log(result);
@@ -83,6 +83,11 @@ router.get("/register", (req, res) => {
         code:200,
         msg:"注册成功"
       });
+      userModel.addUsers(users,(error,result)=>{
+        if(result){
+          console.log(result)
+        }
+      })
     }
   });
   });

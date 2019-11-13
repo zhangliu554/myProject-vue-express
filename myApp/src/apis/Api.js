@@ -40,8 +40,8 @@ export default {
       res.json().then(cb)
     })
   },
-  checkUserRegister(username,cb){
-    fetch(`${REGISTER}/?username=${username}`, { method: 'get' }).then(res=>{
+  checkUserRegister(username,password,cb){
+    fetch(`${REGISTER}/?username=${username}&password=${password}`, { method: 'get' }).then(res=>{
       res.json().then(cb)
     })
   }
