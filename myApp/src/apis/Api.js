@@ -36,12 +36,12 @@ export default {
     return data;
   },
   checkUserLogin(username,password,cb){
-    fetch(`${LOGINURL}/?username=${username}&password=${password}`, { method: 'get' }).then(res=>{
+    fetch(`${LOGINURL}/?username=${username}&password=${password}`, { method: 'post' }).then(res=>{
       res.json().then(cb)
     })
   },
   checkUserRegister(username,password,cb){
-    fetch(`${REGISTER}/?username=${username}&password=${password}`, { method: 'get' }).then(res=>{
+    fetch(`${REGISTER}/?username=${username}&password=${password}`, { method: 'post' }).then(res=>{
       res.json().then(cb)
     })
   }

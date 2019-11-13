@@ -33,6 +33,7 @@
     border-top: 0.005rem solid #ccc;
     padding-top: 0.15rem;
     color: #666;
+    z-index: 999;
   }
   .iconfont{
     line-height: 0.16rem;
@@ -43,4 +44,5 @@
   .to-active{
     color: #000;
   }
+
 </style>

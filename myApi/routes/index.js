@@ -47,8 +47,8 @@ router.get('/item',(req, res)=> {
   // res.send()
 });
 //登录页面
-router.get("/login",  (req, res) => {
-  let user = req.query;
+router.post("/login",  (req, res) => {
+  let user = req.body;
   // console.log(user);
   userModel.checkUserLogin(user,(error,result)=>{
     // console.log(result)
@@ -66,10 +66,10 @@ router.get("/login",  (req, res) => {
   });
 });
 //注册页面路由
-router.get("/register", (req, res) => {
+router.post("/register", (req, res) => {
   //获取form中的用户名和密码
-  let user = req.query.username;
-  let users = req.query;
+  let user = req.body.username;
+  let users = req.body;
   console.log(user);
   userModel.checkUserRegister(user,(error,result)=>{
     console.log(result);
